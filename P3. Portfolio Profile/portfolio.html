@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Atul Sharma</title>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="row">
+            <div class="col-md-6">
+                <img class="img-responsive logo" src="img/logo.PNG" alt="Udacity">
+            </div>
+            <div class="col-md-6">
+                <h1 class="text-right text-uppercase">Atul Sharma</h1>
+                <h4 class="text-right">Front-End Ninja</h4>
+            </div>
+        </header>
+        <hr class="saprator">
+        <section class="row">
+            <div class="col-md-12">
+                <img class="img-responsive big" src="img/big.PNG" alt="Main Image">
+            </div>
+        </section>
+        <section class="row">
+            <div class="col-md-12">
+                <h2>Featured Work</h2>
+            </div>
+        </section>
+        <section class="row">
+            <div class="col-md-4 text-center">
+                <img class="img-responsive project-image" src="img/online_resume.PNG" alt="online resume" data-toggle="modal" data-target="#project1">
+                <h3>Online Resume</h3>
+                <p><a target="_blank" href="https://the-atul-sharma.github.io/Resume">Click Here</a>
+                </p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img class="img-responsive project-image" src="img/pomodoro_clock.PNG" alt="pomodoro clock" data-toggle="modal" data-target="#project2">
+                <h3>Pomodoro Clock</h3>
+                <p><a target="_blank" href="http://codepen.io/atul_sharma/full/obYbwv">Click Here</a>
+                </p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img class="img-responsive project-image" src="img/random_quoto_machine.PNG" alt="animal trading card" data-toggle="modal" data-target="#project3">
+                <h3>RAndom Quoto Machine</h3>
+                <p><a target="_blank" href="http://codepen.io/atul_sharma/full/jWMKaj/">Click Here</a>
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Online Resume</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive project-image-modal" src="img/online_resume.png" alt="online resume"> This is online resume web page.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Pomodoro Clock</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive project-image-modal" src="img/pomodoro_clock.png" alt="pomodoro clock"> This is a material design version of Pomodoro clock. You can use Pomodoro clock for time management and project management. Used technologies angular.js, material design.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Random Quoto Machine</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive project-image-modal" src="img/random_quoto_machine.png" alt="random quoto machine"> This is a Random Quote Generator Machine.You can generate quote and also tweet your generated quote.Used technologies forismatic API, twitter API.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap/js/jquery-1.11.3.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
