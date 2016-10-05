@@ -1,0 +1,69 @@
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#map {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.navOption {
+	margin-left: 15px;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: white; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.navBtn{
+	z-index: 1;
+	margin-top: 5px;
+	margin-left: 5px;
+	position: absolute;
+}
+
+.from-group, .list-group {
+	margin: 10px;
+}
+
+.sort {
+	position: absolute;
+	z-index: 1;
+	right: 10px;
+	top: 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 500px) {
+	#type{
+		font-size: 10px;
+		font-weight: bold;
+	}
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blood Donner Finder</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+
+<body>
+   <!-- side navigation bar -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" data-bind="click: closeNav">&times;</a>
+        <div>
+            <div class="from-group">
+                <input type="text" class="form-control" placeholder="Search..." data-bind="textInput: query" />
+            </div>
+            <!-- /input-group -->
+            <br>
+            <div class="list-group" data-bind="foreach: filteredDonnerList">
+                <button type="button" class="list-group-item" data-bind="text: address, click: $parent.openWindow"></button>
+            </div>
+        </div>
+    </div>
+    <!-- End of side navigation bar -->
+    <button class="btn btn-default navBtn" data-bind="click: openNav"><i class="fa fa-bars"></i>
+    </button>
+
+    <!-- sort menu -->
+    <div class="sort">
+        <select id="type" class="form-control" onchange="filterMarkers(this.value);">
+            <option value="">Sort By</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="Blood Bank">Blood Bank</option>
+        </select>
+    </div>
+
+    <div id="map"></div>
+
+    <script>
+        window.handleError = function() {
+            alert("Something went wrong.");
+        }
+    </script>
+
+    <script src="js/knockout-3.4.0.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyCPJsc4fN6E4v7tKUlI5HbYNfUQtY1VZk4&callback=initMap" onerror="handleError()">
+    </script>
+</body>
+
+</html>
