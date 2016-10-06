@@ -2,6 +2,8 @@
 
 This is a repository of udacity [Front End Nanodegree](https://www.udacity.com/course/nd001) projects.
 
+![Udacity Front End Nanodegree](https://github.com/The-Atul-Sharma/Udacity-Front-End-Nanodegree/blob/master/Udacity%20Front%20End%20Nanodegree.png "Atul Sharma")
+
 ##Projects:
 - P1 - Mockup to Article
 - P2 - Animal Trading Cards
